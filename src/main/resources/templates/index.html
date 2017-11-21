@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>MNSubscriber</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/subscribe.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+html, body {
+	min-width: 100%;
+	min-height: 100%;
+	
+    #background-image: url("images/ask-mercedes-mockup.png");
+    background-repeat: no-repeat;
+</style>
+</head>
+
+<body class="body blockbody">
+    <div id="header">
+	<div id='logo'>
+        <div id='logo-img'>
+        <img src='images/logo.jpg'/>   
+        </div>
+        <div id='logo-name'>
+            Mercedes-Benz
+        </div>
+        </div>
+	
+	
+</div>
+    <div id="content-wrapper">
+        <div id="side-bar">
+        
+            <img src='images/sidebar.jpg'/>   
+        </div>
+            
+        <div id="content">
+        <div id="firstpage">
+                       <div id="message"> 
+                        <B> Ask Mercedes-Benz</B/><br/><br>
+
+                        Your new E Class is full of exciting new
+                        technologies and safety features. To get the most from your
+                        Mercedes-Benz, please download the new Ask Mercedes (beta)
+                        application. This application is a useful resource for exploring
+                        and understanding your new car, and includes an easy-to-use
+                        augmented reality experience.. Please provide a number to receive
+                        a text message link to download the application. Note: This beta
+                        application still in development and currently only available for
+                        2018 E Class models. It is currently supported on iPhones 6 and
+                        newer, running iOS 10 or 11.</div>
+
+            <div id="input">
+
+                        <div id="errorMob" style='display: none;'>Mobile Number is
+                            invalid</div>
+                        <div>
+                            mobile:<br> <input type="text" name="contactNumber"
+                                id="contactNumber" max-length="10" onblur="validatePhoneNum()"
+                                onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')"><br>
+                            <input id="submitBtn" onclick="subscribeMobileNum()"
+                                type="submit" disabled>
+                        </div>
+                    </div>
+            </div>
+            
+            <div id="thankYouDiv" style='display: none;float:left;padding-top:40px;'>
+			<div id="right" >
+				Thank you that we received your request.<br> <a
+					href="https://www.mbusa.com">Visit mbusa.com!</a>
+			</div>
+
+		</div>
+            </div>
+           
+    </div>
+    
+     
+	<div id="footer-wrapper">
+		
+	</div>
+</body>		
+
+
+		<div id="bottomcontianer"
+			style="width: 100%; height: 20%; float: left;"></div>
+
+	</div>
+
+
+</body>
+</html>
